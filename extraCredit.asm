@@ -1,4 +1,11 @@
-#Extra credit covers binary to ASCII data type conversion (range -999 to +999)
+#Covers binary to ASCII data type conversion. It is useful to convert the 2’s complement
+#integer into an ASCII string so that it can be displayed on the monitor. Derive a binary-to-ASCII
+#conversion routine, BinarytoASCII, for converting a 2’s complement integer stored in a0 register into
+#an ASCII string stored in v0 register. The value initially in a0 is restricted to be within the range -999 to
+#+999. After the algorithm completes execution, v0 contains the sign of the value initially stored in a0.
+#The following three bytes contain the three ASCII codes corresponding to the three decimal digits
+#representing its magnitude. This algorithm always produces a string of four characters independent of the
+#sign and magnitude of the integer being converted.
 
 .data
 
